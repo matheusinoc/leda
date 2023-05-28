@@ -1,2 +1,2 @@
 # leda
-Roteiros de LEDA
+Roteiros de Laboratório de Estrutura de Dados

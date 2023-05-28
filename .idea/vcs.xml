@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/R05-02-Rot-TAD-Linear-environment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/R06-02-Rot-Linked-list-environment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/R07-02-Rot-TabelaHash-environment" vcs="Git" />
   </component>
 </project>

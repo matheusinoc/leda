@@ -19,7 +19,6 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		return root.isEmpty();
 	}
 
-	//arrumar
 	@Override
 	public int height() {
 		return height(getRoot());
@@ -30,7 +29,6 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		else return 1 + Math.max(height((BSTNode<T>) node.getLeft()), height((BSTNode<T>) node.getRight()));
 	}
 
-	//arrumar
 	@Override
 	public BSTNode<T> search(T element) {
 		if (element == null) return new BSTNode<>();
@@ -43,7 +41,6 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		else return search(element, (BSTNode<T>) node.getRight());
 	}
 
-	//arrumar
 	@Override
 	public void insert(T element) {
 		insert(element, getRoot());
@@ -87,7 +84,6 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		return node;
 	}
 
-	//arrumar
 	@Override
 	public BSTNode<T> sucessor(T element) {
 		BSTNode<T> node = search(element);
@@ -105,7 +101,6 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		}
 	}
 
-	//arrumar
 	@Override
 	public BSTNode<T> predecessor(T element) {
 		BSTNode<T> node = search(element);
@@ -123,7 +118,6 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		}
 	}
 
-	//arrumar
 	@Override
 	public void remove(T element) {
 		BSTNode<T> node = search(element);
@@ -160,7 +154,6 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		return node.getParent().getLeft().equals(node);
 	}
 
-	//arrumar
 	@Override
 	public T[] preOrder() {
 		ArrayList<T> lista = new ArrayList<>();
@@ -176,7 +169,6 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		}
 	}
 
-	//arrumar
 	@Override
 	public T[] order() {
 		ArrayList<T> lista = new ArrayList<>();
@@ -192,7 +184,6 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
 		}
 	}
 
-	//arrumar
 	@Override
 	public T[] postOrder() {
 		ArrayList<T> lista = new ArrayList<>();
